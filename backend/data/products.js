@@ -79,8 +79,6 @@ const products = [
   },
 ]
 
-//? this way of exporting not compatibel with require syntax 
-//! export default products
+export default products
 
-//? simple module.exports compatible with node
-module.exports = products;
+
