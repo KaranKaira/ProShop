@@ -3,7 +3,9 @@ import  express from 'express';
 const app = express();
 dotenv.config();
 import  products from './data/products.js';
+import connectDB from './config/db.js'
 
+connectDB();//? connect with Mongo_DB;
 
 app.get('/',(req,res)=>{
     res.send('api is good')
