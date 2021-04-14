@@ -8,6 +8,7 @@ import Product from './models/productModel.js';
 import Order from './models/orderModel.js';
 import connectDB from './config/db.js';
 dotenv.config();
+
 //?connect to DB
 connectDB();
 
@@ -38,7 +39,7 @@ const importData = async () => {
 };
 const destroyData = async () => {
   try {
-    //? delete garbage data from database
+    //? delete  data from database
     await User.deleteMany();
     await Product.deleteMany();
     await Order.deleteMany();
@@ -47,7 +48,7 @@ const destroyData = async () => {
     process.exit(); //? if this line not added then the connection will remain open 
   } catch (err) {
     console.log(err);
-    process.exit(1); //? exit unsuccessful
+    process.exit(1); //? exit unsuccessfully
   }
 };
 
