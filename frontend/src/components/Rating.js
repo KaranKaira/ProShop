@@ -73,6 +73,7 @@ Rating.propTypes = {
 //? default color of star , set default fields in props
 Rating.defaultProps = {
   color : '#f8e825',
+  value : 0
 }
 
 
