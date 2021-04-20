@@ -8,8 +8,6 @@ const errorHandler = (err,req,res,next)=>{
     //? err == error from above bcoz it was sent with next
     const statusCode = res.statusCode === 200 ? 500 : res.statusCode;
     res.status(statusCode);
-    console.log('next middleware');
-    console.log(res.statusCode);
 
     //! msg that will show as json and not html
     res.json({
