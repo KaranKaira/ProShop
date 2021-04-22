@@ -6,10 +6,10 @@ import App from './App';
 import {Provider} from 'react-redux'
 import store from './store'
 
-
+//? Provider -> give acces to store to every component
 ReactDOM.render(
   <Provider store = {store}>
-    <App />
+    <App /> 
   </Provider>,
   document.getElementById('root')
 );
