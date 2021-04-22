@@ -84,7 +84,7 @@ const ProductScreen = ({ history , match }) => {
                   </Row>
                 </ListGroup.Item>
 
-                {product.countInStock && (
+                {product.countInStock === 0 ? null :  (
                   <ListGroup.Item>
                     <Row>
                       <Col className = 'product-page-section'>Quantity:</Col>
